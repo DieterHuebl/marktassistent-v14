@@ -1,30 +1,31 @@
+import React from 'react'
 import './index.css'
 
 const qualityPortfolio = [
-  { name: 'SAP', shares: 190, avg: 182.25, current: 187.49, value: 35623.1, unrealized: 995.30 },
-  { name: 'Munich Re', shares: 38, avg: 526.00, current: 499.40, value: 18977.20, unrealized: -1010.80 },
-  { name: 'Siemens', shares: 55, avg: 272.15, current: 273.50, value: 15042.50, unrealized: 74.25 },
+  { name: 'SAP', shares: 190, avg: 182.25, current: 187.49, value: 35623.1, unrealized: 995.3 },
+  { name: 'Munich Re', shares: 38, avg: 526.0, current: 499.4, value: 18977.2, unrealized: -1010.8 },
+  { name: 'Siemens', shares: 55, avg: 272.15, current: 273.5, value: 15042.5, unrealized: 74.25 },
   { name: 'Deutsche Telekom', shares: 516, avg: 29.05, current: 26.06, value: 13446.96, unrealized: -1542.84 },
-  { name: 'RWE', shares: 130, avg: 57.52, current: 58.30, value: 7579.00, unrealized: 101.40 },
-  { name: 'Allianz', shares: 11, avg: 449.90, current: 411.70, value: 4528.70, unrealized: -420.20 },
+  { name: 'RWE', shares: 130, avg: 57.52, current: 58.3, value: 7579.0, unrealized: 101.4 },
+  { name: 'Allianz', shares: 11, avg: 449.9, current: 411.7, value: 4528.7, unrealized: -420.2 },
 ]
 
 const gainPortfolio = [
   { name: 'NVIDIA', shares: 210, avg: 196.69, current: 204.17, value: 42876.31, unrealized: 1572.39 },
-  { name: 'Broadcom', shares: 127, avg: 307.50, current: 308.79, value: 39216.18, unrealized: 163.82 },
+  { name: 'Broadcom', shares: 127, avg: 307.5, current: 308.79, value: 39216.18, unrealized: 163.82 },
   { name: 'Meta', shares: 57, avg: 525.77, current: 645.68, value: 36803.88, unrealized: 6835.03 },
-  { name: 'ASML', shares: 49, avg: 1423.40, current: 1602.20, value: 78507.80, unrealized: 8761.20 },
+  { name: 'ASML', shares: 49, avg: 1423.4, current: 1602.2, value: 78507.8, unrealized: 8761.2 },
   { name: 'Eli Lilly', shares: 45, avg: 998.36, current: 1021.87, value: 45984.12, unrealized: 1057.73 },
 ]
 
 const qualitySummary = {
   portfolio1: {
     total: 247954.61,
-    stocks: 95.197.46,
+    stocks: 95197.46,
     cash: 152757.15,
-    gvv: -2.045.39,
-    month: -82.70,
-    year: -2.045.39,
+    gvv: -2045.39,
+    month: -82.7,
+    year: -2045.39,
     ytd: 61.61,
   },
   portfolio2: {
@@ -32,7 +33,7 @@ const qualitySummary = {
     stocks: 243388.29,
     cash: 24439.44,
     gvv: 17827.72,
-    month: 969.80,
+    month: 969.8,
     year: 17827.72,
     ytd: 9.13,
   },
@@ -63,15 +64,15 @@ const portfolio2PerformanceData = [
 
 const signalRows = [
   { asset: 'SAP', ticker: 'SAP.DE', price: 187.49, currency: 'EUR', status: 'Daten vorhanden' },
-  { asset: 'Munich Re', ticker: 'MUV2.DE', price: 499.40, currency: 'EUR', status: 'Daten vorhanden' },
-  { asset: 'Siemens', ticker: 'SIE.DE', price: 273.50, currency: 'EUR', status: 'Daten vorhanden' },
+  { asset: 'Munich Re', ticker: 'MUV2.DE', price: 499.4, currency: 'EUR', status: 'Daten vorhanden' },
+  { asset: 'Siemens', ticker: 'SIE.DE', price: 273.5, currency: 'EUR', status: 'Daten vorhanden' },
   { asset: 'Deutsche Telekom', ticker: 'DTE.DE', price: 26.06, currency: 'EUR', status: 'Daten vorhanden' },
-  { asset: 'RWE', ticker: 'RWE.DE', price: 58.30, currency: 'EUR', status: 'Daten vorhanden' },
-  { asset: 'Allianz', ticker: 'ALV.DE', price: 411.70, currency: 'EUR', status: 'Daten vorhanden' },
+  { asset: 'RWE', ticker: 'RWE.DE', price: 58.3, currency: 'EUR', status: 'Daten vorhanden' },
+  { asset: 'Allianz', ticker: 'ALV.DE', price: 411.7, currency: 'EUR', status: 'Daten vorhanden' },
   { asset: 'NVIDIA', ticker: 'NVDA', price: 229.64, currency: 'USD', status: 'Daten vorhanden' },
-  { asset: 'Broadcom', ticker: 'AVGO', price: 347.30, currency: 'USD', status: 'Daten vorhanden' },
+  { asset: 'Broadcom', ticker: 'AVGO', price: 347.3, currency: 'USD', status: 'Daten vorhanden' },
   { asset: 'Meta', ticker: 'META', price: 726.22, currency: 'USD', status: 'Daten vorhanden' },
-  { asset: 'ASML', ticker: 'ASMLAS', price: 1602.20, currency: 'EUR', status: 'Daten vorhanden' },
+  { asset: 'ASML', ticker: 'ASMLAS', price: 1602.2, currency: 'EUR', status: 'Daten vorhanden' },
   { asset: 'Eli Lilly', ticker: 'LLY', price: 1149.33, currency: 'USD', status: 'Daten vorhanden' },
   { asset: 'Microsoft', ticker: 'MSFT', price: '-', currency: 'USD', status: 'Auf ausstehend' },
   { asset: 'Johnson & Johnson', ticker: 'JNJ', price: '-', currency: 'USD', status: 'Auf ausstehend' },
@@ -82,29 +83,29 @@ const signalRows = [
 ]
 
 const progressData = [
-  { date: '2026-09-03', p1total: 249.809.32, p1diff: -190.68, p1pct: -0.08, p2total: 249.437.50, p2diff: -562.50, p2pct: -0.22, urth: 210.34 },
-  { date: '2026-09-04', p1total: 249.764.67, p1diff: 44.65, p1pct: 0.09, p2total: 251.828.10, p2diff: 2.390.67, p2pct: 0.73, urth: 209.82 },
-  { date: '2026-09-07', p1total: 248.739.10, p1diff: -1025.57, p1pct: -0.50, p2total: 253.445.18, p2diff: 1.617.00, p2pct: 1.38, urth: 209.82 },
-  { date: '2026-09-08', p1total: 248.132.80, p1diff: -606.30, p1pct: -0.75, p2total: 253.599.49, p2diff: 154.31, p2pct: 1.44, urth: 208.63 },
-  { date: '2026-09-09', p1total: 247.525.09, p1diff: -607.71, p1pct: -0.99, p2total: 253.496.85, p2diff: -102.64, p2pct: 1.40, urth: 207.45 },
-  { date: '2026-09-10', p1total: 246.552.24, p1diff: -972.85, p1pct: -1.38, p2total: 250.779.33, p2diff: -2.717.52, p2pct: 0.31, urth: 205.87 },
-  { date: '2026-09-11', p1total: 247.644.32, p1diff: 1.092.08, p1pct: -0.94, p2total: 251.155.04, p2diff: 375.71, p2pct: 0.46, urth: 207.69 },
-  { date: '2026-09-14', p1total: 249.308.35, p1diff: 1.664.03, p1pct: -0.28, p2total: 245.911.93, p2diff: -5.243.11, p2pct: -1.64, urth: 206.80 },
-  { date: '2026-09-15', p1total: 249.396.94, p1diff: 88.59, p1pct: -0.24, p2total: 245.408.77, p2diff: -503.16, p2pct: -1.84, urth: 205.63 },
-  { date: '2026-09-16', p1total: 249.584.09, p1diff: 187.15, p1pct: -0.17, p2total: 247.708.95, p2diff: 2.300.18, p2pct: -0.92, urth: 204.71 },
-  { date: '2026-09-17', p1total: 249.884.45, p1diff: 404.36, p1pct: -0.00, p2total: 251.571.47, p2diff: 3.862.52, p2pct: 0.63, urth: 207.15 },
-  { date: '2026-09-18', p1total: 248.021.61, p1diff: -1.975.84, p1pct: -0.79, p2total: 253.721.35, p2diff: 2.149.88, p2pct: 1.49, urth: 206.77 },
-  { date: '2026-09-21', p1total: 248.639.59, p1diff: 626.98, p1pct: -0.54, p2total: 261.428.82, p2diff: 7.707.47, p2pct: 4.57, urth: 209.70 },
-  { date: '2026-09-22', p1total: 248.098.46, p1diff: -541.13, p1pct: -0.76, p2total: 263.398.80, p2diff: 1.969.98, p2pct: 5.35, urth: 210.02 },
-  { date: '2026-09-23', p1total: 248.549.36, p1diff: 450.92, p1pct: -0.58, p2total: 262.701.70, p2diff: -697.10, p2pct: 5.08, urth: 207.84 },
-  { date: '2026-09-24', p1total: 248.521.39, p1diff: -28.00, p1pct: -0.59, p2total: 264.398.97, p2diff: 1.697.27, p2pct: 5.76, urth: 207.65 },
-  { date: '2026-09-25', p1total: 249.096.15, p1diff: 574.76, p1pct: -0.36, p2total: 264.240.31, p2diff: -158.66, p2pct: 5.70, urth: 208.73 },
+  { date: '2026-09-03', p1total: 249809.32, p1diff: -190.68, p1pct: -0.08, p2total: 249437.5, p2diff: -562.5, p2pct: -0.22, urth: 210.34 },
+  { date: '2026-09-04', p1total: 249764.67, p1diff: 44.65, p1pct: 0.09, p2total: 251828.1, p2diff: 2390.67, p2pct: 0.73, urth: 209.82 },
+  { date: '2026-09-07', p1total: 248739.1, p1diff: -1025.57, p1pct: -0.5, p2total: 253445.18, p2diff: 1617.0, p2pct: 1.38, urth: 209.82 },
+  { date: '2026-09-08', p1total: 248132.8, p1diff: -606.3, p1pct: -0.75, p2total: 253599.49, p2diff: 154.31, p2pct: 1.44, urth: 208.63 },
+  { date: '2026-09-09', p1total: 247525.09, p1diff: -607.71, p1pct: -0.99, p2total: 253496.85, p2diff: -102.64, p2pct: 1.4, urth: 207.45 },
+  { date: '2026-09-10', p1total: 246552.24, p1diff: -972.85, p1pct: -1.38, p2total: 250779.33, p2diff: -2717.52, p2pct: 0.31, urth: 205.87 },
+  { date: '2026-09-11', p1total: 247644.32, p1diff: 1092.08, p1pct: -0.94, p2total: 251155.04, p2diff: 375.71, p2pct: 0.46, urth: 207.69 },
+  { date: '2026-09-14', p1total: 249308.35, p1diff: 1664.03, p1pct: -0.28, p2total: 245911.93, p2diff: -5243.11, p2pct: -1.64, urth: 206.8 },
+  { date: '2026-09-15', p1total: 249396.94, p1diff: 88.59, p1pct: -0.24, p2total: 245408.77, p2diff: -503.16, p2pct: -1.84, urth: 205.63 },
+  { date: '2026-09-16', p1total: 249584.09, p1diff: 187.15, p1pct: -0.17, p2total: 247708.95, p2diff: 2300.18, p2pct: -0.92, urth: 204.71 },
+  { date: '2026-09-17', p1total: 249884.45, p1diff: 404.36, p1pct: 0.0, p2total: 251571.47, p2diff: 3862.52, p2pct: 0.63, urth: 207.15 },
+  { date: '2026-09-18', p1total: 248021.61, p1diff: -1975.84, p1pct: -0.79, p2total: 253721.35, p2diff: 2149.88, p2pct: 1.49, urth: 206.77 },
+  { date: '2026-09-21', p1total: 248639.59, p1diff: 626.98, p1pct: -0.54, p2total: 261428.82, p2diff: 7707.47, p2pct: 4.57, urth: 209.7 },
+  { date: '2026-09-22', p1total: 248098.46, p1diff: -541.13, p1pct: -0.76, p2total: 263398.8, p2diff: 1969.98, p2pct: 5.35, urth: 210.02 },
+  { date: '2026-09-23', p1total: 248549.36, p1diff: 450.92, p1pct: -0.58, p2total: 262701.7, p2diff: -697.1, p2pct: 5.08, urth: 207.84 },
+  { date: '2026-09-24', p1total: 248521.39, p1diff: -28.0, p1pct: -0.59, p2total: 264398.97, p2diff: 1697.27, p2pct: 5.76, urth: 207.65 },
+  { date: '2026-09-25', p1total: 249096.15, p1diff: 574.76, p1pct: -0.36, p2total: 264240.31, p2diff: -158.66, p2pct: 5.7, urth: 208.73 },
 ]
 
 const transactionRows = [
   { date: '03.09.2026', portfolio: 'P1', description: '6 Startkäufe', gross: 87331.35, costs: 218.33, net: 162450.32 },
-  { date: '11.09.2026', portfolio: 'P1', description: 'SAP +55 @ 175,80 €', gross: 9669.00, costs: 24.17, net: 152757.15 },
-  { date: '03.09.2026', portfolio: 'P2', description: 'NVIDIA / Broadcom / Meta / ASML / Eli Lilly', gross: 224998.07, costs: 562.50, net: 24439.44 },
+  { date: '11.09.2026', portfolio: 'P1', description: 'SAP +55 @ 175,80 €', gross: 9669.0, costs: 24.17, net: 152757.15 },
+  { date: '03.09.2026', portfolio: 'P2', description: 'NVIDIA / Broadcom / Meta / ASML / Eli Lilly', gross: 224998.07, costs: 562.5, net: 24439.44 },
 ]
 
 const formatEuro = (value: number) => `${value.toLocaleString('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} €`
@@ -366,11 +367,7 @@ function App() {
 
       <nav className="tabbar">
         {tabs.map((tab) => (
-          <button
-            key={tab}
-            className={activeTab === tab ? 'tab active' : 'tab'}
-            onClick={() => setActiveTab(tab)}
-          >
+          <button key={tab} className={activeTab === tab ? 'tab active' : 'tab'} onClick={() => setActiveTab(tab)}>
             {tab}
           </button>
         ))}
